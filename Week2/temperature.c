@@ -1,10 +1,9 @@
 #include <stdio.h>
 int main(void){
     int f;
-    prinf("F= ");
+    printf("Fahrenheit= ");
     scanf("%d", &f);
     int c= (f-32)/1.8;
-    printf(X)
-
+    printf("%d°F = %d°C \n", f, c);
 }
 
