@@ -1,0 +1,12 @@
+ // Name of the store: DreamMarket
+
+    printf("\n");
+    printf("**********************************\n");
+    printf("DreamMarket \n");
+    printf("**********************************\n");
+    printf("Item\tQuantity\tPrice");
+    printf("%c\t%d\t%.2f\n", item, quantity, price);
+    printf("----------------------------------\n");
+    printf("Total\t\t\t$%.2f\n",total);
+    printf("----------------------------------\n");
+    printf("Thank you for your purchase!\n");
