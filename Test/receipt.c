@@ -2,10 +2,10 @@
 int main(void){
     char item[50];
     printf("Item: ");
-    scanf("%c", &item);
+    scanf("%s", &item);
 
     int p;
-    printf("Price:  \n");
+    printf("Price:  ");
     scanf("%d", &p);
 
     int q;
@@ -19,7 +19,7 @@ int main(void){
     printf("DreamMarket \n");
     printf("**********************************\n");
     printf("Item\tQuantity\tPrice\n");
-    printf("%c\t%d\t%d\n", item, q, p);
+    printf("%s\t%d\t%d\n", item, q, p);
     printf("----------------------------------\n");
     int total= p*q;
     printf("Total\t\t\t$%d\n",total);
