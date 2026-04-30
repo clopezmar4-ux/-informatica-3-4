@@ -5,7 +5,7 @@ int main(void){
     scanf("%s", &item);
 
     int p;
-    printf("Price:  ");
+    printf("Price: $ ");
     scanf("%d", &p);
 
     int q;
@@ -15,15 +15,15 @@ int main(void){
      // Name of the store: DreamMarket
 
     printf("\n");
-    printf("**********************************\n");
+    printf("**********************************************\n");
     printf("DreamMarket \n");
-    printf("**********************************\n");
-    printf("Item\tQuantity\tPrice\n");
-    printf("%s\t%d\t%d\n", item, q, p);
-    printf("----------------------------------\n");
+    printf("**********************************************\n");
+    printf("Item\t\t\tQuantity\tPrice\n");
+    printf("%s\t\t%d\t\t$%d\n", item, q, p);
+    printf("---------------------------------------------\n");
     int total= p*q;
-    printf("Total\t\t\t$%d\n",total);
-    printf("----------------------------------\n");
-    printf("Thank you for your purchase!\n");
+    printf("Total\t\t\t\t\t$%d\n",total);
+    printf("---------------------------------------------\n");
+    printf("\tThank you for your purchase!\n");
 
 }
