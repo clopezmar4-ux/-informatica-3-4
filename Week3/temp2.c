@@ -5,7 +5,7 @@ int main(void){
     scanf("%d", &c);
     int f= (c*1.8)+32;
     printf("%d°C = %d°F \n", c, f);
-
+//if something of this conditions are apply the it will print a messege depending in the condition
     if(c<0){
         printf("❄️ Freezing weather\n");
     } else if( c<10){
