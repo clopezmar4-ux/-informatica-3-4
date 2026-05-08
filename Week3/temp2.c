@@ -16,7 +16,7 @@ int main(void){
         printf("🖼️ Normal weather\n");
     } else if (c<40){
         printf("☀️ Hot weather\n");
-    }else if (c>40){
+    }else{
         printf("🔥 Very hot weather\n");
     }
 }
