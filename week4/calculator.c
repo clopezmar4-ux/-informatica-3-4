@@ -5,6 +5,9 @@ void n1_sub_n2(void);
 void n1_mul_n2(void);
 void n1_div_n2(void);
 
+float n1;
+   float n2;
+
 int main(void){
     int user_response;
     printf("Calculator\n");
@@ -29,8 +32,7 @@ int main(void){
     }
 
 void n1_ad_n2(void){
-   float n1;
-   float n2;
+
     printf("Operation= ");
     scanf("%f+%f", &n1, &n2);
      float t= n1+n2;
@@ -40,30 +42,29 @@ void n1_ad_n2(void){
 void n1_sub_n2(void){
     float n1;
    float n2;
-    printf("n1= ");
-    scanf("%f", &n1);
-    printf("n2= ");
-    scanf("%f", &n2);
+    printf("Operation= ");
+    scanf("%f-%f", &n1, &n2);
     float t= n1-n2;
     printf("%.2f-%.2f = %.2f\n", n1, n2, t); // 2. Define
 }
 void n1_mul_n2(void){
     float n1;
    float n2;
-    printf("n1= ");
-    scanf("%f", &n1);
-    printf("n2= ");
-    scanf("%f", &n2);
+   printf("Operation= ");
+    scanf("%*%f", &n1, &n2);
      float t= n1*n2;
     printf("%.2f*%.2f = %.2f\n", n1, n2, t); // 2. Define
 }
 void n1_div_n2(void){
      float n1;
    float n2;
-    printf("n1= ");
-    scanf("%f", &n1);
-    printf("n2= ");
-    scanf("%f", &n2);
-    float t= n1/n2;
-    printf("%.2f/%.2f = %.2f\n", n1, n2, t);
+    printf("Operation= ");
+    scanf("%f/%f", &n1, &n2);
+     float t= n1/n2;
+    if (n2==0){
+        printf("%.2f/%.2f = Sintax error\n", n1, n2);
+    } else{
+
+        printf("%.2f/%.2f = %.2f\n", n1, n2, t);
+    }
 }
